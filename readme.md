@@ -1,4 +1,4 @@
-# Wifi Heatmap Project: Example Server
+# Wifi Monitor Project: Example Server
 
 Created by Bradley Tian (bradley_tian@berkeley.edu)
 
