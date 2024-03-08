@@ -33,7 +33,7 @@ When surveying the campus population, we have observed that most participants pr
 
 ## API Endpoints
 
-    POST http://localhost/PORT/add-user
+    POST http://localhost:PORT/add-user
 
 Add a new user submission to the database.
 
@@ -53,7 +53,7 @@ A success status if no error occurs.
 </details>
 <br/>
 
-    GET http://localhost/PORT/get-users
+    GET http://localhost:PORT/get-users
 
 Get all user submissions from the database.
 
@@ -67,7 +67,7 @@ Get all user submissions from the database.
 </details>
 <br/>
 
-    DELETE http://localhost/PORT/delete-user/?id=#
+    DELETE http://localhost:PORT/delete-user/?id=#
 
 Delete a user submission with a specific ID.
 
