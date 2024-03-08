@@ -54,15 +54,15 @@ async function testDeleteUser(id) {
 
 test_users = [
     {
-        location: 'Dwinelle',
+        location: 'Moffitt Library',
+        rating: 2,
+    },
+    {
+        location: 'Haas Courtyard',
         rating: 3,
     },
     {
-        location: 'Wheeler',
-        rating: 5,
-    },
-    {
-        location: 'Moffitt',
+        location: 'East Asian Library',
         rating: 1,
     }
 ];

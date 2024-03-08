@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const db = require('./handler');
 const parser = require('body-parser');
@@ -6,6 +7,7 @@ require('dotenv').config();
 
 app.use(parser.urlencoded({extended: false}));
 app.use(parser.json());
+app.use(cors())
 
 app.get("/get-users", async (request, response) => {
     const results = await db.getAllUsers();
