@@ -24,6 +24,12 @@ app.delete("/delete-user", async (request, response) => {
     response.status(200).json({success: true});
 });
 
+app.get("/get-aggregated-scores", async (request, response) => {
+    const results = await db.getAggregatedScores();
+    response.status(200).json({results});
+});
+
+
 const port = process.env.PORT || 2024;
 app.listen(port, () => {
     console.log(`server running on port ${port}`);
