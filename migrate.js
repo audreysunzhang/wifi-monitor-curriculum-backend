@@ -1,7 +1,6 @@
 const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('./heatmap_data.db');
 
-// Add new columns to the 'users' table if they don't exist
 db.run(`ALTER TABLE users ADD COLUMN signal_strength INTEGER`, (err) => {
   if (err) {
     console.log("signal_strength column already exists or another error: ", err.message);
